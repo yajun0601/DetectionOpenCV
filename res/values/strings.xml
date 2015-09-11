@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OCV Image Manipulations</string>
+    <string name="capture">拍照</string>
+    <string name="canny">canny</string>
+    <string name="calc">计算</string>
+    <string name="save">保存</string>
+
+</resources>

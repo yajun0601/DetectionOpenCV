@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path":".",
+			"name":"jni",
+			"folder_exclude_patterns":["images"]
+		}
+	],
+	"settings":
+	{
+		"tab_size":4
+	}
+}

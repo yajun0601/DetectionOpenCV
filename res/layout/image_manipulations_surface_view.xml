@@ -1,0 +1,90 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableRow >
+        <LinearLayout         
+            android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" > 
+    <SeekBar
+        android:id ="@+id/param1_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="500"
+        android:progress="80"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        />
+    <SeekBar
+        android:id ="@+id/param2_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="500"
+        android:progress="90"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        />
+    </LinearLayout>
+    </TableRow>
+<TableRow >
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >   
+    <Button
+        android:id = "@+id/btn_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="capture"
+        />
+    <Button
+        android:id = "@+id/btn_canny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/canny"
+        />
+    <Button
+        android:id = "@+id/btn_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calc"
+        />
+    <Button
+        android:id = "@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        />
+        <TextView
+        android:id="@+id/myshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测结果...." />
+        <!--
+	<Button   
+        android:id="@+id/btn_plate"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:text="车牌检测"
+        android:onClick="click"
+        /> 
+    <ImageView  
+        android:id="@+id/image_view"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:contentDescription="@string/str_proc"
+        android:onClick="clickImage"/>   -->
+    </LinearLayout>
+</TableRow>
+
+<TableRow >
+    <org.opencv.android.JavaCameraView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/image_manipulations_activity_surface_view" />
+    
+</TableRow>
+
+</TableLayout>
